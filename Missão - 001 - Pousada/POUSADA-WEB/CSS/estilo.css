@@ -1,0 +1,224 @@
+* {
+    margin: 0;    
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans pro', sans-serif;    
+    text-decoration: none;    
+    color: gray;    
+}
+.main{   
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto; 
+}
+/*secao-topo*/
+
+.secao-topo{ 
+    width: 100%; /* A especificação pede 1024 px, porém deixa espaço em branco no topo !*/
+    height: 60px;
+    background-color: #fff;    
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;    
+    flex-wrap: wrap;    
+}
+.link-pousada{ 
+    flex-wrap: wrap;
+    font-size: 23px;
+}
+.link-pousada span{
+    color: rgb(116, 141, 196);
+    font-weight: 600;
+} 
+.link-conteudo a{
+    margin-right: 30px;
+    flex-wrap: wrap;
+}
+
+/*secao-conteudo*/
+
+.secao-conteudo{
+    margin-bottom: 50px;
+}
+
+/*conteudo-banner*/
+
+.conteudo-banner{
+    width: 100%;
+    height: auto;
+    min-height: 640px;
+    padding: 120px 80px;
+    background-image: url('../ASSETS/img-fundo.jpg'); 
+    background-size: cover;
+}
+.conteudo-secao-banner{
+    max-width: 500px;
+    height: 220px;
+    padding: 40px;
+    margin: 90px auto 0 auto;
+    background-color: #13a088b2; 
+    border: 1px solid white;
+}
+.conteudo-secao-banner .h2-titulo, .p-titulo{
+    color: white;    
+    text-align: center;
+}
+.conteudo-secao-banner .h2-titulo{
+    font-size: 55px;
+}
+.conteudo-secao-banner .p-titulo{
+    font-size: 25px;
+    padding-top: 35px;
+    font-weight: 500;
+}
+
+/*conteudo-informativo*/
+  
+.conteudo-informativo{
+    width: 100%;
+    height: 230px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.conteudo-informativo .h2-informativo{
+    padding-top: 70px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.conteudo-informativo .p-informativo{
+    padding-top: 15px;
+}
+
+/*conteudo-quartos*/
+
+.conteudo-quartos{
+    max-width: 1024px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 10px;
+}    
+.card-quartos{
+    padding-top: 10px;
+    flex: 1 1 200px;/* Corresponde a flex-grow: 1 e width Xpx; - refatoração de código.*/    
+}
+.card-quartos img{  
+    height: 200px;
+}
+.link-quartos{
+    padding-bottom: 20px;
+    padding-top: 20px;    
+    border-bottom: 3px solid gray;
+    font-size: 18px;
+    font-weight: bold;
+}
+iframe{
+    width: 100%;
+    max-height: 350px;
+}
+
+/*secao-sobre*/
+
+.conteudo-sobre-descricao{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;  
+}
+.card-pousada{
+    width: 450px;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.texto-card-pousada{
+    max-width: 200x;
+    margin-right: 15px;
+    text-align: left;
+}
+.h2-card-pousada{
+    font-size: 20px;
+    font-weight: 900;
+}
+.p-card-pousada{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.img-card-pousada img{
+    width: 90px;
+    height: 100px;
+    object-fit: cover;/* Matém a proporção original da imagem ao reduzir seu tamanho"*/
+}
+
+/*secao-rodape*/
+
+.secao-rodape{
+    width: auto;
+    background-color: rgba(13, 107, 55, 0.712);
+}
+.rodape-contato{
+    width: 100%;
+    height: 100px;
+}
+.limita-rodape{
+    width: 100%;
+    height: 100px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;    
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(54, 94, 72, 0.712);
+}
+.contato{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.p-entre_em_contato{
+    width: 180px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+.img-rodape{
+    margin-right: 10px;
+}
+.link-rodape{
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.link-rodape, .img-rodape, .p-rodape-telefone{
+    color: white;
+}
+.rodape-marca-registrada{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p-marca-registrada{
+    color: white;
+    font-weight: bold   ;
+}
+

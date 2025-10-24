@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+/*secao-banner*/
+.secao-banner{
+    width: 100%;
+    height: auto;
+    padding: 120px 80px;
+    background-image: url('../img/banner-topo.jpg'); 
+    background-position: center;
+    background-size: cover;
+    color: #3c184e;    
+}
+/*secao-banner conteudo*/
+.conteudo-banner-logo{
+    max-width: 250px;
+    max-height: 30px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.conteudo-banner-logo .nome-pet{    
+    font-size: 35px;
+    margin: 0 0 0 5px 0;
+    display: inline;
+}
+.conteudo-banner-logo img{
+    width: 30px;
+    margin-right: 5px;
+}
+.conteudo-banner-logo .slogan{
+    font-size: 14px;
+    text-align: center;
+    margin: 0;    
+}
+.conteudo-banner-central{    
+     max-width: 1024px;
+     border-radius: 10px;/* Na especificação mostra 10px; porém no flow mostra 5px; Qual é o correto?*/
+     padding: 40px;
+     margin: 70px auto 0 auto;
+     background-color: #ffffffc4; 
+     box-shadow: 0px 8px 32px #1f26875e;         
+}
+.conteudo-banner-central h2{
+    font-size: 60px;
+    text-align: center;    
+    font-weight: 800;  
+    margin-bottom: 0 0 40px 0;
+}
+.conteudo-banner-central p{
+    width: 200px;
+    padding: 10px 25px;
+    margin: 0 auto 0 auto;
+    border-radius: 10px;
+    background-color: #3c184e;
+    font-size: 20px;
+    text-align: center;
+}
+.conteudo-banner-central a{  
+    color:#ffff;
+    text-align: center;
+}
+.conteudo-banner-central img{
+    width: 20px;
+}
+/*secao-servico*/
+.secao-servico{    
+    width: 100%;
+    padding: 120px 80px;
+    color: #3c184e;    
+}   
+.secao-servico h3{
+    font-size: 36px;
+    text-align: center;
+    margin: 0 0 45px 0;
+}
+/*secao-servico
+    conteudo-servico-lista*/
+.conteudo-servico-lista{
+    max-width: 800px;
+    margin: 0 auto 50px auto;    
+}    
+.lista-servico li{
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+.lista-servico span{
+    font-weight: 700;
+    font-style: italic;
+}
+/*secao-servico
+    conteudo-servico-img*/
+.contudo-servico-img{
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+    justify-content: center;
+}
+.contudo-servico-img img{
+    border-radius: 5px;
+    box-shadow: 3px 6px 10px 6px #0000005c;
+}
+/*secao-faixa*/
+.secao-faixa{
+    padding: 120px 80px;
+    background-color: #3c184e;
+    text-align: center;
+}
+.secao-faixa p{
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+.secao-faixa span{
+    font-weight: 700;
+    font-style: italic;
+}
+.secao-faixa img{
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+/*secao-marcas*/
+.secao-marcas{
+    padding: 120px 80px;
+}
+.secao-marcas h3{
+    font-size: 36px;
+    color: #3c184e;
+    text-align: center;
+    margin: 0 0 45px 0;
+}
+.marcas{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.marcas img{
+    width: 148px;
+    height: 148px;
+    margin: 0 15px;
+}
+/*secao-ondeEstamos*/
+.secao-ondeEstamos{
+    width:100%;
+    padding: 120px 80px;
+    text-align: center;
+}
+.secao-ondeEstamos h3, p{
+    font-size: 36px;
+    color: #3c184e;
+    text-align: center;
+    margin: 0 0 45px 0;
+}
+.secao-ondeEstamos p{
+    font-size: 20px;
+}
+.secao-ondeEstamos iframe{
+    width: 800px;
+    height: 450px;
+}
+/*secao-rodape*/
+.secao-rodape{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #3c184e;
+}
+.secao-rodape p{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
