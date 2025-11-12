@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.secao-horarios, .secao-banner,.informacao-imagemTres,
+.informacao-imagemDois, .secao-banner, .secao-contato{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  
+}
+/*secao-topo*/
+.secao-Topo{
+    width: 100%;
+    position: fixed;
+    top: 0; /* ou utilizar z-index: 1;*/
+    height: 70px;
+    background-color: #604829;  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.secao-Topo a{    
+    color: #c4a47c;
+    text-decoration: none;
+    font-family: OsWald;
+    font-size: 18px;
+    margin-right: 15px;
+    text-shadow: 3px 5px 2px #000000;
+}
+.logo{
+    width: 70px;
+}
+/*secao-banner*/
+.secao-banner{
+    height: 100vh;
+    background-image: url('img/parallax-imagem1.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.secao-banner h2{
+    color: white;
+    font-size: 80px;
+}
+/*secao-informacao*/
+.informacaoTextual{
+    padding: 80px 80px;
+    font-size: 16px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.informacaoTextual h2{
+    padding-bottom: 30px;
+}
+.informacaoTextual p{
+    width: 83vw;
+}
+.subTitulo, .subTituloContatos{
+    background-color: #604829;
+    color: white;
+    font: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-width: 25vw;
+    margin: auto;
+    text-align: center;
+}
+.informacao-imagemDois{
+    height: 100vh;
+    background-image: url('img/parallax-imagem2.jpg');
+    display: flex;    
+}
+.informacao-imagemTres{
+    height: 100vh;
+    background-image: url('img/parallax-imagem3.jpg');
+    display: flex;    
+}
+/*secao-contato*/
+.secao-contato{
+    height: 100vh;
+    background-image: url('img/parallax-imagem4.png');
+    display: flex;
+    align-items: center;
+    flex-direction: column  ;    
+}
+.secao-contato iframe{
+    width: 53vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.subTituloContatos{
+    padding-bottom: 30px;
+    text-shadow: 0px 6px 8px #000000;
+}
+/*secao-horarios*/
+.secao-horarios{
+    height: 100vh;
+    background-image: url('img/cafeteria.jpg');
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.secao-horarios h2{
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 80px;    
+}
+.lista{
+    color: white;
+    width: 60vw;
+}
+.lista li { /* itens da lista */
+    position: relative;
+    display: flex;
+    padding-bottom: 15px;
+}
+.lista li div { /* tarja */
+    margin: auto;
+    width: 70%;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 70%;
+    background-color: #acacac;   
+}
+.lista li p { /* parágrafos */
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.lista li .segunda{
+    color: #c4a47c;
+    font-weight: 800;
+}
+/*secao-rodape*/
+.secao-Rodape{
+    width: 100vw;
+    height: 70px;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.secao-Rodape{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.assinatura{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.secao-Rodape a{
+    width: 60px;
+    height: 60px;
+    right: 50px;
+    position: absolute;
+    right: 50px;
+    bottom: 80px;
+}
