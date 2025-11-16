@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+/*secao-topoHome & secao-topoTbPrecos*/
+.secao-topoHome, .secao-topoTbPrecos{
+    width: 100vw;
+}
+.secao-topoHome{
+    background-color: #fff;
+}
+.secao-topoTbPrecos{
+    background-color: #2f86d6;
+}
+.limitaSecaoTopo{
+    width: 1024px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.secao-topoHome a,.secao-topoTbPrecos a{
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.secao-topoHome a{    
+    color: #233032;
+}
+.secao-topoTbPrecos a{
+    color:  #fff;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textoLogo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.h2Logo{
+    color: #000000;
+    font-size: 32px;
+}
+.pLogoHome, .pLogoPrecos{
+    font-size: 16px;
+}
+.pLogoHome{
+    color: #2f86d6;
+}
+.pLogoPrecos{
+    color: #fff;
+}
+.imgLogo{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+/*secao-banner - Home */
+.secao-banner{
+    width: 100vw;
+    height: 500px;
+    margin: auto;
+    padding: 180px 0;
+    background-color: #2f86d6;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.limitaTamanhoBanner{
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.imgBanner{
+    width: 50%;
+}
+.textoBanner{
+    width: 470px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.textoBanner h2, p{
+    text-align: left;
+    padding-bottom: 15px;
+}
+.h2Banner{
+    font-size: 28px;
+    color: #fff;
+}
+.pBanner{
+    font-size: 16px;
+    color: #fff;
+    width: 420px;
+}
+/*secao-anuncioUm e secao-anuncioDois - Home */
+.secao-anuncioUm, .secao-anuncioDois{
+    width: 100vw;
+}
+.secao-anuncioUm{    
+    background-color: #233032;
+}
+.secao-anuncioDois{     
+    background-color: #2f86d6;
+}
+.limitaTamanhoAnuncio{
+    width: 1024px;
+    height: 140px;    
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.textoAnuncio{
+    width: 600px;
+    color: #fff;
+}
+.h2Anuncio{
+    font-size: 24px;
+}
+.pAnuncioUm{
+    font-size: 16px;
+}
+.botaoAnuncioUm, .botaoAnuncioDois{
+    width: 200px;
+    padding: 10px 0;    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.botaoAnuncioUm{
+    background-color:#2f86d6;
+}
+.botaoAnuncioDois{
+    background-color: #233032;
+}
+.botaoAnuncioUm a, .botaoAnuncioDois a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.botaoAnuncioUm a::before, .botaoAnuncioDois a::before{  
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    background-image: url("assets/icone-foguete.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*secao-informacao - Home */
+.secao-informacao{
+    width: 100vw;
+    background-color: #fff;
+}
+.limitaTamanhoInformacao{
+    width: 1024px;    
+    padding: 50px 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.h2InformacaoUm{    
+    width: 900px;
+    margin: auto;
+    font-size: 32px;
+    color: #000000;
+    padding: 50px 0;
+    text-align: center;    
+}
+.spanInformacao{
+    color: #2f86d6;
+    font-size: 32px;
+}
+.cardInformacao{
+    width: 33%;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+.imgInformacao{
+    width: 33%;
+    margin-bottom: 20px;
+}
+.pInformacao{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #000000;
+}
+.h2InformacaoDois{
+    font-size: 18px;
+    color: #000000;
+}
+/*secao-planos - Home*/
+.secao-planos{
+    width: 100vw;
+    height: auto;
+    background-color: #fff;
+}
+.limitaTamanhoPlanos{
+    width: 1024px;
+    margin: auto;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.h2Planos{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-size: 22px;
+}
+.spanPlanos{
+    color: #2f86d6;
+}
+.tabelaPlanos{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 30px;
+    border-collapse: collapse;
+    box-shadow: 0 0 30px 10px #2f86d6;
+}
+.tabelaPlanos thead{
+    display: flex;
+    justify-content: center;
+}
+.tabelaPlanos tbody{
+     width: auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.tabelaPlanos tr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    border: 1px solid  #f1f3f7;
+}
+.tabelaPlanos th{
+    width: 205px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+}
+.tabelaPlanos td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 205px;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+.tabelaPlanos td:nth-child(odd){
+    background-color: #f1f3f7;
+}
+.tabelaPlanos td:nth-child(even)
+{
+    background-color: white;
+}
+.imgPlanos{
+    width: 90px;
+    padding-top: 10px;
+}
+.legendaTabela{
+    width: 150px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #a89f9f; 
+}
+/*secao-conteudoTbPrecos - tabelaDePreco*/
+.secao-conteudoTbPrecos{
+    width: 100vw;
+    height: auto;
+    background-color: #fff;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.limitaConteudoTbPrecos{
+    width: 92%;
+    margin: auto;
+}
+.tableTbPrecos{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+}
+.tableTbPrecos th:nth-child(1){
+    background-color: #fff;
+}
+.tableTbPrecos td:nth-child(1){
+    background-color:  #f1f3f7;
+    padding: 15px;
+    text-align: left;
+}
+.tableTbPrecos th, td{
+    width: 190px;
+    text-align: center;
+}
+.tableTbPrecos th{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    color: #a89f9f; 
+    background-color: #f1f3f7;
+}
+.tableTbPrecos td{
+    font-size: 12px;
+    border: 2px solid #f1f3f7;
+    border-left: none;
+    border-top: none;
+}
+.tableTbPrecos figcaption{
+    font-size: 25px;
+    color: #000000;
+}
+.circulo{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #2f86d6;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+/*secao-rodapeHome & secao-rodapeTbPrecos*/
+.secao-rodapeHome, .secao-rodapeTbPrecos{
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.secao-rodapeTbPrecos{
+    background-color: #2f86d6;
+}
+.limitaTamanhoRodapeHome, .limitaTamanhoRodapeTbPrecos{
+    width: 100vw;
+    margin: auto;
+}
+.limitaTamanhoRodapeHome{    
+    padding-top: 50px;
+}
+.limitaTamanhoRodapeTbPrecos{
+    padding-top: 50px;
+}
+.contatoRodapeHome, .contatoRodapeTbPrecos{   
+    padding-bottom: 25px;
+    text-align: center;
+}
+.contatoRodapeHome{
+    padding-top: 30px;
+}   
+.contatoRodapeHome p, .pRodapeTbPrecos{
+    text-align: center;
+    font-size: 16px;
+}
+.pRodapeTbPrecos{
+    color: #fff;
+}
+.byDeveloper{
+    height: 50px;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f3f7;
+}
+.spanbyDeveloper{
+    font-size: 16px;
+    color: #2f86d6;
+}
