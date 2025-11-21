@@ -1,115 +1,225 @@
 *{    
-    margin: 0;    
-    font-family: tahoma;
+    margin: 0;
+    padding: 0;    
+    font-family: tahoma, sans-serif;
+    box-sizing: border-box;
 }
-.secao-topo, .secao-servicos, .secao-contato{
+.secao-topo, .secao-contato,.secao-rodape{
    background-color: rgba(13, 107, 55, 0.712);
-   /* background-color: #750811;*/
 }
-.p-logo, .h2-logo, .link-topo a, .secao-servicos, .secao-contato, .link-contato{
+.pLogo, .h2Logo, .linkTopo a, .secao-contato{
     color: white;
 }
-.inf-conteudo span, .p-sobre span, .h1-conteudo, .h2-conteudo, .h2-sobre{
+.inf-conteudo span, .p-sobre span, .h2-sobre{
     color: rgba(13, 107, 55, 0.712);
-    /*color: #750811;*/
     font-weight: 800;    
 }
-.p-logo, .secao-servicos h2,.p-sobre,.p-contato,.iframe-contato{
+.p-sobre,.p-contato,.iframe-contato{
     padding-bottom: 15px;
 }
 /*secao-topo*/
 .secao-topo{
-    width: 100%;
-    height: 230px;
+    width: 100vw;
+    height: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.logo-topo{
-    width: 150px;
-    margin-top: 20px;
-    margin-bottom: 12px;
+.limitaTopo{
+    width: 70%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.link-topo{
+.logoTopo{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.imgLogo{
+    width: 100px;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-bottom: 12px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 20px 3px white; 
+}
+.infLogo{    
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.h2Logo{
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    text-shadow: 3px 5px 2px black
+}
+.pLogo{
+    text-shadow: 3px 5px 2px black; 
+}
+.linkTopo{
     align-items: center;
     text-align: center;    
     margin-bottom: 15px;  
 }
-.link-topo a{
+.linkTopo a{
     padding-right: 10px;
+    text-decoration: none;
+    text-shadow: 3px 5px 2px black; 
 }
-/*secao-conteudo*/
-.secao-conteudo{    
-    max-width: 900px;    
-    margin: auto;
-    margin-top: 30px;
+/*secao-banner*/
+.secao-banner{
+    width: 100vw;
+    height: 400px;       
+    background-image: url('imagens/banner/bannerTres.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
-.img-conteudo{
-    display: flex;
-    justify-content: center;
-}
-.img{
-    width: 100%;
-    height: auto;    
-    object-fit: contain;
-    padding-right: 10px;
-}
-.imgUm{
+.h2Banner{
     margin: auto;
-    width: 700px;
-    height: 230px;
-}    
-.img, .imgUm, .logo-topo{
-    border-radius: 5px;  
-    object-fit: cover; 
+    padding: 7px;    
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    text-align: center; 
+    background-color: rgba(13, 107, 55, 0.712);
+    border-radius: 5px;
+    box-shadow: 10px 10px 50px 40px white;
+    text-shadow: 3px 5px 2px black;
 }
-.h1-conteudo, .h2-conteudo{
+/*secao-servico*/
+.secao-servico{
+    width: 100vw;
+    height: auto;
+}
+.limitaServico{
+    max-width: 70%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.h2Servico{
     text-align: center;
-}
-.h1-conteudo{    
-    margin-top: 50px;
-    margin-bottom: 10px;
-}
-.h2-conteudo{
-    margin-bottom: 15px;  
-}
-.inf-conteudo{
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    text-align: left;
-    font-size: 20px;
-}
-/*secao-serviços*/
-.secao-servicos{
-    width: 100%;
-    margin: auto;  
     padding-top: 15px;
-    padding-bottom: 30px;  
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    padding-bottom: 15px;
+    font-weight: 800;
+    color:  rgba(13, 107, 55, 0.712);
 }
-.secao-servicos h2, p{
-    text-align: center;
+.infServico{
+    width: 60%;
+    margin: auto; 
 }
-.secao-servicos p{
-    margin-bottom: 30px;
+.pLista{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 550;
+    text-align: left;
 }
-.div-lista{
+.divListaServico{
     width: auto;
     margin: auto;
     display: flex;
     justify-content: center;
     text-align: left;
 }
-.listaServicos{
+.listaServico{
     width: 400px;
     margin-bottom: 20px;
+}
+.menServico{
+    padding-top: 10px;
+    border-top: 2px solid rgba(54, 94, 72, 0.712);
+}
+.menServico span{
+    color: rgba(13, 107, 55, 0.712);
+    font-weight: 800;
+}
+.pMenServico{
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 20px;
+    font-weight: 599;
+    text-align: center;            
+}
+/*secao-catalogo*/
+.secao-catalogo{
+    width: 100vw;
+    margin: auto;
+    background-color:  rgba(13, 107, 55, 0.712);
+}
+.limitaCatalogo{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.h2Catalogo{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-weight: 800;
+    color:  white
+}
+.cardCatalogo{
+    margin: auto;
+    margin: 10px 5px 10px 5px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 50px 5px white; 
+}
+.imgCatalogo img{
+    width: 300px;
+    height: 290px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 15px;
+    object-fit: contain;
+    display: flex;
+    box-shadow: 5px 5px 50px 5px white; 
+}
+.infCatalogo{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+.infCatalogo h3, small{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.infCatalogo p{   
+    text-align: left; 
+}
+.precoCatalogo{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid rgba(54, 94, 72, 0.712);
+}
+.iconeCarrinho img{
+    width: 50px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
 }
 /*secao-sobre*/
 .secao-sobre{
@@ -131,57 +241,192 @@
 }
 /*secao-contato*/
 .secao-contato{
-    width: auto;
+    width: 100vw;
     margin: auto;
+}
+.limitaContato{
+    width: 70%;
+    margin: auto;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-bottom: 2px solid rgba(54, 94, 72, 0.712);    
+}
+.mapaContato{
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+.cardsContato{
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+.cardContato{
+    width: 30%;
+    height: auto;
+    margin: 10px auto 10px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.imgContato{
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+    display: flex;
+}
+.linkContato{
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.p-contato{
+    font-size: 20px;
+    text-align: center;
 }
 .h2-contato{
     padding-top: 15px;
     text-align: center;
 }
-.iframe-contato{
+.h2Mapa{    
+    width: 65%;
     margin: auto;
-    width: 800px;
-    border-radius: 5px;
+    text-align: center;
+    font-weight: 300    ;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.div-contato{
-    width: 100%;
-    height: 100px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    display: flex;    
+.iframContato{    
+    width: 438px;
+    padding: 10px;
+    border-radius: 5px;    
+}
+.cardTelefone{
+    width: auto;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;    
+}
+.linkTelefone{
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+.imgTelefone{
+    padding-right: 10px;
+}
+
+/*secao-sugestao*/
+.secao-sugestao{
+    width: 100vw;
+    margin: auto;
+    height: auto;
+    text-align: center;
+}
+.h2Sugestao{
+    padding-top: 20px;    
+    color:rgba(54, 94, 72, 0.712);
+}
+.pSugestao{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.limitaSugestao{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.iconeSugestao{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconeSugestao img{
+    width: 80px;
+    height: 70px;
+    padding: 10px;
+    object-fit: cover;
+}
+.h2Comentario{
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 550;
     border-top: 2px solid rgba(54, 94, 72, 0.712);
 }
-.card-contato{
+.exSugestao{
+    display: flex;
+}
+.imgSugestao {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.imgSugestao img{
+    width: 300px;
+    height: 300px;    
+    object-fit: cover;
+    border-radius: 10px;
+}
+/*secao-rodape*/
+.secao-rodape{    
+     width: 100vw;
+     height: auto;  
+}
+.limitaRodape{
+    width: 70%;  
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pDesenvolvedor{
     width: auto;
-    max-width: 300px;
+    margin: auto;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;    
+}
+.cardFlutuante{
+    width: 30%;
     height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;  
 }
-.img-contato, .icone-rodape{
-    width: 50px;
-}
-.link-contato{
-    display: flex;
-    align-items: center;
+.linkFlutuante{
+    position: fixed;
+    bottom: 150px;
+    right: 30px;
+    z-index: 1000;    
     text-decoration: none;
 }
-.p-entre_em_contato{
-    width: 180px;
-    font-size: 20px;
-    font-weight: 700;
-    color: white;
-    text-align: left;
+.legendaFlutuante{
+    text-align: center;
+    padding-top: 10px;
+    color: black;
 }
-.img-contato{
-    margin-right: 10px;
+.imgFlutuante{
+    max-width: 90px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
 }
+.imgFlutuante img{    
+    border-radius: 50%;
+}
+
