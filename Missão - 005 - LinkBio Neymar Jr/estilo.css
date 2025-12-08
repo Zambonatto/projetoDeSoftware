@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+/*secao-banner*/
+.secao-banner{    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backgroundVideo{
+    width: 100%;
+    height: 100%;
+    position: absolute;    
+    object-fit: cover;
+    z-index: -1;
+}
+.conteudoBanner{
+    width: 768px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.limitaGradiente{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.borda-gradiente{
+    width: 200px;
+    height: 200px;    
+    border-radius: 100%;    
+    background-image: url("img/neymar.jpg");
+    background-position: center;
+    background-size: cover;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.borda-gradiente::before{
+    content: "";
+    width: 215px;
+    height: 215px;
+    position: absolute;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    border-radius: 100%;   
+    z-index: -1;
+}
+.h1NeymarJr{    
+    color: white;
+    padding-bottom: 10px;
+    text-shadow: 3px 6px 1px #000000;
+}
+.h1NeymarJr::before{
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 5px;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    bottom: 372px;
+    left: 42,5%;
+}
+.logoNeymar{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-bottom: 20px;   
+}
+.linkBanner{
+    gap: 20px;   
+    margin-bottom: 90px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aBanner{
+    width: 90%;
+    height: auto;
+    padding: 3px;    
+    color: #fff;
+    background-color: #0200006e;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 30px;    
+    align-items: center;
+    display: flex;    
+}
+.aBanner:hover{
+    background-color: #fff;
+    color: #000000;
+}
+.divImgBanner{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgBanner{
+    width: 30px;
+    margin-left: 10px;
+    object-fit: contain;
+    align-items: start;
+    border-radius: 20%;
+}
+.textoLinkBanner{
+    width: 768px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Estilo da tabela */
+.secao-tabela {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  font-family: 'Monstserrat', sans-serif;
+
+  background-image: url('img/imagem-de-fundo.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.secao-tabela h2 {
+  font-size: 74px;
+  color: #fff;
+  text-shadow: 3px 6px 1px #000000;
+}
+
+.tabela th {
+  font-size: 26px;
+  background-color: #000000cc;
+  color: #ffff;
+  text-shadow: 2px 2px 1px #000000;
+}
+
+.tabela th, tr, td {
+  padding: 20px;
+}
+
+.tabela td img {
+  width: 30px;
+}
+
+.tabela tbody td:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tabela tbody tr:nth-of-type(odd) {
+  background-color: #ffffffcc;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+}
+
+.tabela tbody tr:nth-of-type(even) {
+  background-color: #000000cc;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+
+/*
+.secao-estatistica{
+    width: 100%;
+    height: 100vh;
+    position: relative;  
+    background-image: url('img/imagem-de-fundo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;   
+    font-family: 'Monstserrat', sans-serif;
+}
+.conteudoEstatistica{
+    width: 768px;
+    margin: auto;   
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.h2Estatistica{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 3px 6px 1px #000000;
+}
+.tbEstatistica th{   
+    background-color: #000000cc;
+    color: #ffff;
+    text-shadow: 2px 2px 1px #000000;
+}
+.tbEstatistica tr{   
+    display: flex;
+    justify-content: center;
+    position: relative;
+}  
+.tbEstatistica th, td{
+    width: 123px;
+    height: 60px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tbEstatistica tr:nth-child(even){
+    background-color: #000000cc;
+     color: #fff;
+}
+.tbEstatistica tr:nth-child(odd){
+    background-color:#ffffffcc;
+    color: #000000;
+}  
+.tbEstatistica td:first-child{
+   justify-content: flex-start;
+   padding-left: 6%;
+}
+.tbEstatistica .brasil:first-child::before{
+   content: "";
+   width: 30px;
+   height: 35px;
+   position: absolute;   
+   top: 20%;
+   left: 1%;
+   background-image: url("img/cbf.png");
+   background-size: 30px 35px;
+   background-repeat: no-repeat;   
+}
+.tbEstatistica .santos:first-child::before{
+   content: "";
+   width: 30px;
+   height: 35px;
+   position: absolute;   
+   top: 20%;
+   left: 1%;
+   background-image: url("img/santos.png");
+   background-size: 30px 35px;
+   background-repeat: no-repeat;   
+}
+.tbEstatistica .barcelona:first-child::before{
+   content: "";
+   width: 30px;
+   height: 35px;
+   position: absolute;   
+   top: 20%;
+   left: 1%;
+   background-image: url("img/barcelona.png");
+   background-size: 30px 35px;
+   background-repeat: no-repeat;   
+}
+.tbEstatistica .psg:first-child::before{
+   content: "";
+   width: 30px;
+   height: 35px;
+   position: absolute;   
+   top: 20%;
+   left: 1%;
+   background-image: url("img/psg.png");
+   background-size: 30px 35px;
+   background-repeat: no-repeat;   
+}
+.tbEstatistica .alHilal:first-child::before{
+   content: "";
+   width: 30px;
+   height: 35px;
+   position: absolute;   
+   top: 20%;
+   left: 1%;
+   background-image: url("img/alhilal.png");
+   background-size: 30px 35px;
+   background-repeat: no-repeat;   
+}
+*/
+
