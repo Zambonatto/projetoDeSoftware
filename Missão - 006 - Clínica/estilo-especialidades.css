@@ -1,0 +1,125 @@
+/*conteudoEspecialidades - Especialidades*/
+.conteudoEspecialidades{
+    padding-top: 20px;
+    padding-bottom: 20px;   
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.linkEspecialidades nav{
+   display: flex;
+   gap: 15px;   
+}
+.linkEspecialidades a{   
+    text-align: center;
+    line-height: 1.5;
+    color: #0000008c;   
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 3px solid rgb(86, 149, 243);
+    display: flex;
+    justify-content: space-around; 
+    /*
+    text-decoration-color: rgb(86, 149, 243);
+    text-decoration-thickness: 2px;
+    */    
+}
+.linkEspecialidades a:hover{   
+    color: rgb(49, 5, 5);
+    border-bottom-color: rgb(49, 5, 5);
+}
+.especialidade{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.infoEspecialidades{
+    width: 50%;   
+    text-align: center;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.infoEspecialidades p{
+    width: 75%;
+    line-height: 1.8;
+    display: flex;
+}
+.quadroEspecialidades{
+    width: 1024px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.imgEspecialidades img{
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+.tabEspecialidades{
+    width: 75%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+.tabEspecialidades table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.tabEspecialidades th{
+    height: 20%;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgb(86, 149, 243);
+}
+.tabEspecialidades td{
+    padding-left: 10px;
+    font-size: 20px;
+}
+.tabEspecialidades tr:nth-child(odd){
+    background-color: gray;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px){   
+    .tabEspecialidades{       
+        height: auto;       
+    }        
+    .conteudoEspecialidades h2{
+        max-width: 50%;
+        text-align: center;
+    }
+}
+@media screen and (max-width:512px){
+    .tabEspecialidades{       
+        height: auto;       
+    } 
+
+}
+@media (max-width: 768px) {
+    .quadroEspecialidades{
+        width: 95%;
+        height: auto;
+    }
+    .tabEspecialidades{
+        width: 100%;
+    } 
+    .linkEspecialidades nav{
+        flex-wrap: wrap;
+        justify-content: center;       
+    }    
+    .imgEspecialidades img{
+        display: none;
+    }
+    .tabEspecialidades{
+        justify-content: center;
+    }    
+}
