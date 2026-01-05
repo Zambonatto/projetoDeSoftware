@@ -50,7 +50,7 @@ body{
     width: 100vw;
     height: 500px;
     background-image: url('assets/recepcao.png');
-    background-size: cover;    
+    background-size: contain;    
 } 
 .tituloBanner{
     max-width: 1024px;
@@ -124,6 +124,7 @@ body{
 }
 .multiInfoUm h2{
     padding-bottom: 20px;
+    text-align: center;
 }
 .multiInfoUm p{
     max-width: 75%;
@@ -207,6 +208,7 @@ body{
     color: #fff;
     padding-left: 5px;
     padding-right: 5px;
+    text-align: center;
 }
 @media screen and (max-width: 425px){
     /*secao-topo*/
@@ -253,14 +255,28 @@ body{
         height: 400px;
         display: block;
     }
-}
-  
+}  
 @media screen and (min-width: 426px) and (max-width: 768px){
+    /*secao-topo*/
+    .limitaLargura{
+        flex-wrap: wrap;
+    }
     /*secao-conteudo*/
     /*conteudoBanner*/
     .conteudoBanner{
-        height: 300px;       
+        height: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;          
     }
+    .tituloBanner{
+        height: 200px;
+        padding-top: 14%;        
+    } 
+    .tituloBanner p{
+        max-width: 500px;
+        font-size: 30px;
+    } 
     /*conteudoSobre*/
     .imgSobre{
         display: none;
@@ -269,15 +285,31 @@ body{
     .card {
         width: calc(100%/3);
     }
+     /*secao-contato*/
+    .conteudoContato iframe{
+        width: 80%;
+        height: 400px;
+        display: block;
+    }
 }
 @media screen and (min-width: 769px)and (max-width: 1024px){
     /*secao-conteudo*/
     /*conteudoBanner*/
     .conteudoBanner{
-        height: 400px;       
+        height: 400px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;        
     }
-    /*conteudoMulti*/
-    
+    .tituloBanner{
+        height: 200px;
+        padding-top: 15%;
+        text-align: left;        
+    } 
+    .tituloBanner p{
+        max-width: 500px;
+        font-size: 35px;
+    } 
 }
 @media screen and (min-width: 1025px){
     /*secao-conteudo*/

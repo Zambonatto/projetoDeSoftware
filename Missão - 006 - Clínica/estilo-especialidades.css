@@ -21,11 +21,7 @@
     text-decoration: none;
     border-bottom: 3px solid rgb(86, 149, 243);
     display: flex;
-    justify-content: space-around; 
-    /*
-    text-decoration-color: rgb(86, 149, 243);
-    text-decoration-thickness: 2px;
-    */    
+    justify-content: space-around;       
 }
 .linkEspecialidades a:hover{   
     color: rgb(49, 5, 5);
@@ -102,7 +98,6 @@
     .tabEspecialidades{       
         height: auto;       
     } 
-
 }
 @media (max-width: 768px) {
     .quadroEspecialidades{
@@ -121,5 +116,11 @@
     }
     .tabEspecialidades{
         justify-content: center;
+    }    
+}
+@media (min-width:769px) {
+    .quadroEspecialidades{
+        width: 95%;
+        height: auto;
     }    
 }
