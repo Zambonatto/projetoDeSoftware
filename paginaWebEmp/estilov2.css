@@ -1,0 +1,655 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+/*secao-topo & secao-rodape*/
+.secao-topo, .secao-rodape{
+    width: 100%;
+    background-color: rgba(0, 26, 72);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logoTopo, .logoRodape{
+    width: 250px;
+}
+.logoTopo img, .logoRodape img{
+    width: 100%;
+}
+.linkTopo{
+    width: 50%;
+}
+.linksTopo, .linksRodape{
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+}
+.linksTopo a, .linksRodape a{
+    text-decoration: none ;
+    color: white;
+    text-shadow: 10px 0px 25px white;
+}
+/*secao-main*/
+/*secao-banner*/
+.secao-banner{
+    width: 100%;
+    background-image: url('img/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.limitaLarguraBanner{
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.divSlogan{
+    width: 100%; 
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 25px rgba(255, 166, 38);
+    background-color: white;    
+}
+.divSlogan h1{
+    font-size: 45px;
+    color:  rgba(0, 26, 72);    
+}
+.divSlogan h2{  
+    font-size: 30px; 
+    color: rgba(255, 166, 38);
+}
+/*secao-projetos*/
+.secao-projetos{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h2Estilo{
+    margin: 15px;
+    font-size: 45px;
+    color:  rgba(0, 26, 72);
+    text-shadow: 2px 1px 2px  rgba(255, 166, 38);
+}
+.limitaLarguraProjetos{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cardProjetos, .descProjetos{    
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10%;
+    box-shadow: 4px 12px 35px  rgba(0, 26, 72);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.cardProjetos{
+    width: 280px;
+    height: 350px;
+}
+.imgProjeto{
+   width: 280px;
+   height: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.imgProjeto img{
+    width: 96%;
+    border-radius: 10%;
+}
+.descProjeto a{
+    padding: 5px;
+    text-decoration: none;
+    color:rgba(0, 26, 72);
+    font-size: 25px;
+    border-radius: 10%;
+    box-shadow: 4px 12px 35px  rgba(0, 26, 72);
+}
+/*secao-quemSomos*/
+.secao-quemSomos{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;   
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.limitaLarguraQuemSomos{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.quemSomos{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quemSomosDesc{
+    display: flex;
+    flex-direction: column;
+}
+.pQuemSomos{
+    width: 75%;
+    margin: auto;
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: justify;
+    color: rgba(0, 26, 72);
+    font-weight: 600;   
+}
+.tbQuemSomos{
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+}
+.tbQuemSomos th:nth-child(1){
+   background-color: #fff;
+   color: #fff;
+}
+.tbQuemSomos td:nth-child(1){
+    background-color:  #f1f3f7;
+    padding: 15px;
+    text-align: left;
+}
+.tbQuemSomos th, td{
+    width: 190px;
+    text-align: center;
+    color:  rgba(0, 26, 72);
+}
+.tbQuemSomos th{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    color:  rgba(0, 26, 72);
+    background-color: #f1f3f7;
+}
+.tbQuemSomos td{
+    font-size: 15px;
+    border: 2px solid #f1f3f7;
+    border-left: none;
+    border-top: none;
+}
+/*secao-ondeEstamos*/
+.secao-ondeEstamos{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;   
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*secao-rodape*/
+.secao-rodape{
+    background-color: rgba(255, 166, 38);
+}
+.linkRodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+ .linkRodape h2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;    
+}
+.iconeRodape{
+    width: 50px;
+}
+.iconeRodape img{
+    width: 100%;
+    border-radius: 30%;
+}
+
+/*Ajustes de telas*/
+@media only screen and (max-width: 320px){
+/*secao-topo & secao-rodape*/
+    .secao-topo{
+        margin: auto;
+        flex-direction: column;
+    }
+    .logoTopo, .logoRodape{       
+        display: flex;
+        justify-content: center;
+    }
+    .logoTopo img, .logoRodape img{
+        width: 150px;
+    }
+    .linkTopo{
+        width: 100vw;
+        padding: 10px;       
+    }
+    .linksTopo{       
+        align-items: center;
+        text-align: center;   
+    }
+    .linksTopo a{        
+        font-size: 10px;   
+    } 
+    .linkRodape h2{
+        text-align: center;
+    }
+    .secao-rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .iconeRodape{
+        width: 25px;
+    }
+    .linkRodape h2{
+        font-size: 12px;
+        padding-bottom: 15px;
+    }
+/*secao-banner*/
+    .secao-banner{
+        background-size: contain;
+        margin: auto;
+    }
+    .limitaLarguraBanner{        
+        height: 26vh;
+        align-items: center;
+    }      
+    .divSlogan h1{
+        font-size: 12px !important;
+    }
+    .divSlogan h2{
+        font-size: 9px !important;
+    }
+/*secao-projetos*/
+    .h2Estilo{
+        margin: auto;
+        font-size: 15px;
+        padding-bottom: 10px;
+        text-align: center;  
+    }
+    .cardProjetos{
+        width: 190px !important;
+        height: 250px !important;
+    }
+    .imgProjeto{
+        width: 190px !important;
+        height: 170px;        
+    }
+    .descProjeto a{   
+        font-size: 15px !important;
+    }
+/*secao-quemSomos*/ 
+     .limitaLarguraQuemSomos{
+        width: 100%;
+    }
+    .pQuemSomos{
+        font-size: 15px;
+    }
+    .tbQuemSomos th{        
+        font-size: 8px;             
+    }
+    .tbQuemSomos td{
+        font-size: 8px;   
+    }
+/*secao-ondeEstamos*/
+    .limitaLarguraOndeEstamos{
+        width: 90%;
+    }
+    .limitaLarguraOndeEstamos iframe{
+        width: 100%;
+        padding-top: 15px;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+/*secao-topo & secao-rodape*/
+    .secao-topo{
+        margin: auto;
+        flex-direction: column;
+    }
+    .logoTopo, .logoRodape{       
+        display: flex;
+        justify-content: center;
+    }
+     .logoTopo img, .logoRodape img{
+        width: 180px;
+    }
+    .linkTopo{
+        width: 100vw;
+        padding: 10px;       
+    }
+    .linksTopo{       
+        align-items: center;
+        justify-content: center;
+    }
+    .linksTopo a{        
+        font-size: 13px;
+        text-align: center;   
+    }
+    .linkRodape h2{
+        text-align: center;
+    }
+    .secao-rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .iconeRodape{
+        width: 25px;
+    }
+    .linkRodape h2{
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+    /*secao-banner*/
+    .secao-banner{
+        margin: auto;
+    }
+    .limitaLarguraBanner{
+        width: 100%;
+        height: 30vh;
+        align-items: center;
+    }
+    .divSlogan{
+        width: 70%;
+        margin: auto;
+    }      
+    .divSlogan h1{
+        font-size: 12px !important;
+    }
+    .divSlogan h2{
+        font-size: 9px !important;
+    }
+    /*secao-projetos*/
+    .secao-projetos{
+        align-items: center;
+    }
+    .h2Estilo{
+        width: 98%;
+        margin: auto;
+        font-size: 15px;
+        text-align: center;
+        padding: 15px;
+    }
+    .limitaLarguraProjetos{
+        width: 98%;
+    }
+    .cardProjetos{
+        width: 250px;
+        height: 320px;
+    }
+    .imgProjeto{
+        width: 250px;
+        height: 170px;        
+    }
+    .descProjeto a{   
+        font-size: 20px;
+    }
+    /*secao-quemSomos*/ 
+    .h2Estilo{
+        text-align: center;
+    }
+    .limitaLarguraQuemSomos{
+        width: 98%;
+    }
+    .pQuemSomos{
+        font-size: 15px;
+    }  
+    .tbQuemSomos th{        
+        font-size: 8px;             
+    }
+    .tbQuemSomos td{
+        font-size: 8px;   
+    }
+    /*secao-ondeEstamos*/
+    .limitaLarguraOndeEstamos{
+        width: 90%;
+    }
+    .limitaLarguraOndeEstamos iframe{
+        width: 100%;
+        padding-top: 15px;
+    } 
+}
+@media screen and (min-width: 481px) and (max-width: 882px) {
+     .secao-topo{
+        margin: auto;
+        flex-direction: column;
+    }
+    .logoTopo, .logoRodape{       
+        display: flex;
+        justify-content: center;
+    }
+     .logoTopo img, .logoRodape img{
+        width: 180px;
+    }
+    .linkTopo{
+        width: 100vw;
+        padding: 10px;       
+    }
+    .linksTopo{       
+        align-items: center;
+        justify-content: center;
+    }
+    .linksTopo a{        
+        font-size: 13px;
+        text-align: center;   
+    }
+    .linkRodape h2{
+        text-align: center;
+    }
+    .secao-rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .iconeRodape{
+        width: 25px;
+    }
+    .linkRodape h2{
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+    /*secao-banner*/
+    .secao-banner{
+        margin: auto;
+        background-size: cover;
+    }
+    .limitaLarguraBanner{
+        width: 100%;
+        height: 50vh;
+    }
+    .divSlogan{
+        width: 80%;
+        height: 30%;
+        margin: auto;
+    }      
+    .divSlogan h1{
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+    .divSlogan h2{
+        font-size: 15px;
+    }
+    /*secao-projetos*/
+    .secao-projetos{
+        align-items: center;
+    }
+    .h2Estilo{
+        width: 98%;
+        margin: auto;
+        font-size: 25px;
+        text-align: center;
+        padding: 15px;
+    }
+    .limitaLarguraProjetos{
+        width: 98%;
+    }
+    .cardProjetos{
+        width: 250px;
+        height: 320px;
+    }
+    .imgProjeto{
+        width: 250px;
+        height: 170px;        
+    }
+    .descProjeto a{   
+        font-size: 20px;
+    }
+    /*secao-quemSomos*/ 
+    .h2Estilo{
+        text-align: center;
+    }
+    .limitaLarguraQuemSomos{
+        width: 98%;
+    }
+    .pQuemSomos{
+        font-size: 15px;
+    }  
+    .tbQuemSomos th{        
+        font-size: 8px;             
+    }
+    .tbQuemSomos td{
+        font-size: 8px;   
+    }
+    /*secao-ondeEstamos*/
+    .limitaLarguraOndeEstamos{
+        width: 90%;
+    }
+    .limitaLarguraOndeEstamos iframe{
+        width: 100%;
+        padding-top: 15px;
+    }
+}
+@media screen and (min-width: 883px) and (max-width: 1024px) {
+/*secao-banner*/
+    .secao-banner{
+        margin: auto;
+        background-size: cover;
+    }
+    .limitaLarguraBanner{
+        width: 100%;
+        height: 60vh;
+    }
+    .divSlogan{
+        width: 80%;
+        height: 30%;
+        margin: auto;
+    }      
+    
+    .divSlogan h2{
+        font-size: 22px;
+    }
+/*secao-projetos*/
+    .secao-projetos{
+        align-items: center;
+    }
+    .h2Estilo{
+        width: 98%;
+        margin: auto;
+        font-size: 25px;
+        text-align: center;
+        padding: 15px;
+    }
+    .limitaLarguraProjetos{
+        width: 98%;
+    }
+    .cardProjetos{
+        width: 250px;
+        height: 320px;
+    }
+    .imgProjeto{
+        width: 250px;
+        height: 170px;        
+    }
+    .descProjeto a{   
+        font-size: 20px;
+    }
+/*secao-quemSomos*/ 
+    .h2Estilo{
+        text-align: center;
+    }
+    .limitaLarguraQuemSomos{
+        width: 98%;
+    }
+    .pQuemSomos{
+        font-size: 15px;
+    }  
+    .tbQuemSomos th{        
+        font-size: 8px;             
+    }
+    .tbQuemSomos td{
+        font-size: 8px;   
+    }
+/*secao-ondeEstamos*/
+    .limitaLarguraOndeEstamos{
+        width: 90%;
+    }
+    .limitaLarguraOndeEstamos iframe{
+        width: 100%;
+        padding-top: 15px;
+    }
+}
+
+
+/*
+@media screen and (max-width: 767px) {
+/*secao-topo
+    .linksTopo a{        
+        font-size: 13px !important;  
+    }
+/*secao-banner
+    .secao-banner{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    .limitaLarguraBanner{        
+        height: 50vh;
+        align-items: baseline;
+        padding-top: 8%;
+    }  
+/*secao-projetos
+    .h2Estilo{
+        text-align: center;
+    }
+    .cardProjetos{
+        width: 230px;
+        height: 320px;
+    }
+    .imgProjeto{
+        width: 230px;
+        height: 170px;        
+    }
+    .descProjeto a{   
+        font-size: 20px;
+    }
+   
+
+}
