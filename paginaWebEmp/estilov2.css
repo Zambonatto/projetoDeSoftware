@@ -472,4 +472,32 @@
     .descProjeto a{   
         font-size: 20px;
     }
+<<<<<<< HEAD
 }
+=======
+/*secao-quemSomos*/ 
+    .h2Estilo{
+        text-align: center;
+    }
+    .limitaLarguraQuemSomos{
+        width: 98%;
+    }
+    .pQuemSomos{
+        font-size: 15px;
+    }  
+    .tbQuemSomos th{        
+        font-size: 8px;             
+    }
+    .tbQuemSomos td{
+        font-size: 8px;   
+    }
+/*secao-ondeEstamos*/
+    .limitaLarguraOndeEstamos{
+        width: 90%;
+    }
+    .limitaLarguraOndeEstamos iframe{
+        width: 100%;
+        padding-top: 15px;
+    }
+}
+>>>>>>> 18b2142c5c63fc3bd9fab9c7cddad6af4ae4d3b5
