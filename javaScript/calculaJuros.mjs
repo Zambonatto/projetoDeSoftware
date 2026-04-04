@@ -17,8 +17,10 @@ if(valorDevido > 0 ) {
         console.log("Taxa de juros: " + taxa * 100 + "%");
         console.log ("Valor total com juros: R$ " + valorAtual.toFixed(2));
     }
+    else{
+        console.log("\nObrigado por estar em dia!");
+    }
 }
-let finaliza = (valorDevido <= 0) ? "O valor devido" : "Os dias de atraso";
-if (valorDevido <= 0 || diasDeAtraso <= 0) {        
-        console.log("\nValor inválido. " + finaliza + " deve ser maior que zero."); 
+else{
+    console.log("\nO valor devido deve ser maior que zero!");
 }
