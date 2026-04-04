@@ -1,6 +1,6 @@
 import entradaDeDados from'readline-sync';
 
-let valorDevido = entradaDeDados.question("\nInforme o valor devido:");
+let valorDevido = entradaDeDados.question("\nInforme o valor devido: ");
 let diasDeAtraso = 0;
 
 if(valorDevido > 0 ) {
@@ -15,7 +15,7 @@ if(valorDevido > 0 ) {
         console.log("\nValor original da dívida: R$ " + valorDevido);
         console.log("Dias de atraso: " + diasDeAtraso);
         console.log("Taxa de juros: " + taxa * 100 + "%");
-        console.log ("Valor total com juros: R$ " + valorAtual.toFixed(0));
+        console.log ("Valor total com juros: R$ " + valorAtual.toFixed(2));
     }
 }
 let finaliza = (valorDevido <= 0) ? "O valor devido" : "Os dias de atraso";
